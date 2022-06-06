@@ -35,6 +35,18 @@ body{
     color: #DF7CE8;
     font-size: 80px;
     text-align: center;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -47,6 +59,18 @@ body{
     margin-left: 150px;
     margin-bottom: 0px;
     align-self: start;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 
 }
 
@@ -62,7 +86,18 @@ h1{
 .h1Nosotros, .h1Contacto, .h1Productos, .h1Pedidos {
     font-size: 30px;
     margin-top: 0px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
 
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 
 }
 
