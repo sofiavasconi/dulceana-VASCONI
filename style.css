@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+    
+body{ 
+    background-color: #FFDDDD;
+    overflow-x: hidden;
+
+}
+
+.grid-inicio {
+    display: grid;
+    grid-template-columns: 50px 450px 100px;
+    grid-template-rows: 200px 100px 10px;
+    grid-template-areas: "logo h2 h2"
+                         "logo h4 h4";
+    align-items: start;
+    align-content: start;
+    justify-content: space-between;
+    justify-items: start;
+
+}
+
+.logo {
+    grid-area: logo;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 100px;
+    margin-left: 20px;
+}
+
+
+.h2{
+    grid-area: h2;
+    font-family: 'Luckiest Guy', cursive;
+    color: #DF7CE8;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+.h4{
+    grid-area: h4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DF7CE8;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 150px;
+    margin-bottom: 0px;
+    align-self: start;
+
+}
+
+
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    color: #DF7CE8;
+    font-size: 90px;
+}
+
+
+
+.h1Nosotros, .h1Contacto, .h1Productos, .h1Pedidos {
+    font-size: 30px;
+    margin-top: 0px;
+
+
+}
+
+
+
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C726FF;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.wppContacto, .igContacto, .fbContacto {
+    color: #1EA6F2;
+}
+
+
+
+
+.h2Nosotros, .h2Contacto, .h2Productos, .h2Pedidos {
+    font-family: 'Luckiest Guy', cursive;
+    color: #DF7CE8;
+    font-size: 110px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+}
+
+
+
+
+.padreFlex{
+    display: grid;
+    background-color: #F6B3FC;
+    border: #F6B3FC;
+    align-items: stretch;
+}
+
+   
+
+.hijoFlex, .listaNosotros, .listaContacto, .listaProductos, .listaPedidos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    font-size: 25px;
+    list-style: none;
+    margin: 10px;
+}
+
+.listaMenu {
+    display: none;
+}
+
+
+
+a{
+    color: #C726FF;
+    text-decoration: none;  
+}
+
+
+
+.pagina {
+    color: #FFDDDD;
+}
+
+
+
+.cajachica{
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 100px;
+    margin-left: 400px;
+}
+
+
+
+.choco{
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 100px;
+    margin-left: 200px;
+}
+
+
+
+#redes{
+   margin-left: 570px;
+}
+
+
+
+legend, textarea{
+    color: #C726FF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#formulario{
+    color: #1EA6F2;
+    font-size: 15px;
+    text-align: center;
+    border-color: #C726FF;
+    margin-left: 36%;
+    align-content: center;
+    display: inline-block;
+    border-width: 50%;
+}
+
+
+
+.textoProductos {
+    text-align: left;
+}
+
+
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 3px);
+    grid-gap: 15px;
+    grid-template-areas: "plastico carton choco formas frascos";
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 80px;
+}
+
+#cajaPlastico {
+    grid-area: plastico;
+    display:inline-block;
+    vertical-align:top;
+}
+
+#cajaCarton {
+    grid-area: carton;
+    display:inline-block;
+    vertical-align:top;
+}
+
+
+#cajaChoco {
+    grid-area: choco;
+    display:inline-block;
+    vertical-align:top;
+}
+
+#cajaFormas {
+    grid-area: formas;
+    display:inline-block;
+    vertical-align:top;
+}
+
+#Frascos {
+    grid-area: frascos;
+    display:inline-block;
+    vertical-align:top;
+    margin-bottom: 0px;
+}
+
+#redesProductos{
+    margin-left: 570px;
+}
+
+
+
+
+.linkPedidos {
+    color: #1EA6F2;
+}
+
+
+
+#reserva {
+    color: #1EA6F2;
+    border-color: #C726FF;
+    text-align: center;
+    display: inline;
+    margin-left: 35%;
+}
+
+
+
+.textoPedidos {
+    color: #1EA6F2;
+    text-align: left;
+}
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 470px) {
+
+    body { 
+        background-color: #FFDDDD;
+        overflow-x: hidden;
+        width: 470px;
+    }
+    
+
+    .grid-inicio {
+        display: grid;
+        grid-template-columns: 45px 470px;
+        grid-template-rows: 130px 125px;
+        grid-template-areas: "logo logo"
+                             "h2 h2"
+                             "h4 h4";
+        align-items: start;
+        align-content: start;
+    }
+    
+    .logo {
+        grid-area: logo;
+        width: 200px;
+        height: 200px;
+        -webkit-border-radius: 100px;
+        margin-left: 16%;
+    }
+    
+    
+    .h2{
+        grid-area: h2;
+        font-family: 'Luckiest Guy', cursive;
+        color: #DF7CE8;
+        font-size: 50px;
+        text-align: center;
+        align-self: start;
+        margin-left: 8%;
+    }
+    
+    
+    .h4{
+        grid-area: h4;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #DF7CE8;
+        text-align: center;
+        font-size: 25px;
+        margin-left: 18%;
+        margin-bottom: 0px;
+        align-self: start;
+    
+    }
+
+    
+    .padreFlex{
+        display: grid;
+        background-color: #F6B3FC;
+        border: #F6B3FC;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+       
+    
+    .hijoFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+        align-self: center;
+        font-size: 30px;
+        list-style: none;
+        width: 470px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .listaNosotros, .listaContacto, .listaProductos, .listaPedidos{
+        display:  none;
+    }
+
+    .listaMenu {
+        display: flex;
+        justify-content: space-between;
+        font-family: Arial, Helvetica, sans-serif;
+        align-content: center;
+        font-size: 25px;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+    }
+
+
+    .cajachica, .choco {
+        display: none;
+    }
+
+    .h2Nosotros, .h2Contacto, .h2Productos, .h2Pedidos {
+        font-size: 60px;
+        margin-left: 20px;
+    }
+
+    p, .textoProductos {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #C726FF;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #formulario {
+        align-items: center;
+        margin-left: 60px;
+
+    }
+
+    #reserva {
+        color: #1EA6F2;
+        border-color: #C726FF;
+        text-align: center;
+        display: inline;
+        margin-left: 5%;
+    }
+    
+    
+    
+    .textoPedidos {
+        color: #1EA6F2;
+        text-align: left;
+    }
+    
+
+
+    #redes, #redesProductos {
+        display: grid;
+        display: inline;
+        justify-content: end;
+        margin-left: 160px;
+        margin-top: 200px;
+    }
+
+
+    .grid-productos {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-gap: 100px;
+        grid-template-areas: "plastico carton" 
+                             "choco formas"
+                             "frascos frascos";
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 50px;
+        vertical-align: bottom;
+        height: 600px;
+    }
+    
+    #cajaPlastico {
+        grid-area: plastico;
+        display:inline-block;
+        margin-top: 10px;
+    }
+    
+    #cajaCarton {
+        grid-area: carton;
+        display:inline-block;
+        vertical-align:top;
+    }
+    
+    
+    #cajaChoco {
+        grid-area: choco;
+        display:inline-block;
+        vertical-align:top;
+    }
+    
+    #cajaFormas {
+        grid-area: formas;
+        display:inline-block;
+        vertical-align:top;
+    }
+    
+    #frascos {
+        grid-area: frascos;
+        display:inline-block;
+        vertical-align:top;
+        margin-left: 100px;
+    }
+    
+    
+
+}
