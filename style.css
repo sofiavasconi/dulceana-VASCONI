@@ -303,13 +303,13 @@ legend, textarea{
     body { 
         background-color: #FFDDDD;
         overflow-x: hidden;
-        width: 470px;
+        width: 95%;
     }
     
 
     .grid-inicio {
         display: grid;
-        grid-template-columns: 45px 470px;
+        grid-template-columns: 45px 450px;
         grid-template-rows: 130px 125px;
         grid-template-areas: "logo logo"
                              "h2 h2"
@@ -320,10 +320,10 @@ legend, textarea{
     
     .logo {
         grid-area: logo;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         -webkit-border-radius: 100px;
-        margin-left: 16%;
+        margin-left: 13%;
     }
     
     
@@ -331,10 +331,12 @@ legend, textarea{
         grid-area: h2;
         font-family: 'Luckiest Guy', cursive;
         color: #DF7CE8;
-        font-size: 50px;
+        font-size: 40px;
+        align-content: center;
+        margin-left: 40px;
+        width: 45%;
+        block-size: fit-content;
         text-align: center;
-        align-self: start;
-        margin-left: 8%;
     }
     
     
@@ -343,13 +345,24 @@ legend, textarea{
         font-family: Arial, Helvetica, sans-serif;
         color: #DF7CE8;
         text-align: center;
-        font-size: 25px;
-        margin-left: 18%;
-        margin-bottom: 0px;
-        align-self: start;
-    
+        font-size: 20px;
+        align-content: center;
+        margin-left: 40px;
+        width: 45%;
+        margin-top: 10%;
+        block-size: fit-content;
+        text-align: inline;
     }
 
+    
+    .padreFlex1{
+        display: grid;
+        background-color: #F6B3FC;
+        border: #F6B3FC;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
     
     .padreFlex{
         display: grid;
@@ -357,10 +370,9 @@ legend, textarea{
         border: #F6B3FC;
         flex-direction: column;
         justify-content: center;
-        margin-left: 3%;
-        margin-right: 3%;
+        width: 100%;
+        box-sizing: fit-content;
     }
-    
        
     
     .hijoFlex{
@@ -369,11 +381,13 @@ legend, textarea{
         justify-content: space-around;
         font-family: Arial, Helvetica, sans-serif;
         align-self: center;
-        font-size: 30px;
+        font-size: 20px;
         list-style: none;
-        width: 470px;
+        width: 150px;
         height: 300px;
         text-align: center;
+        box-sizing: fit-content;
+
     }
 
     .listaNosotros, .listaContacto, .listaProductos, .listaPedidos{
@@ -381,14 +395,14 @@ legend, textarea{
     }
 
     .listaMenu {
-        display: flex;
-        justify-content: space-between;
+        display: inline;
         font-family: Arial, Helvetica, sans-serif;
         align-content: center;
-        font-size: 25px;
-        width: 100px;
+        font-size: 20px;
+        width: 2px;
         height: 40px;
         text-align: center;
+        block-size:fit-content;
     }
 
 
@@ -396,22 +410,35 @@ legend, textarea{
         display: none;
     }
 
-    .h2Nosotros, .h2Contacto, .h2Productos, .h2Pedidos {
-        font-size: 60px;
-        margin-left: 20px;
-    }
 
-    p, .textoProductos {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #C726FF;
-        font-size: 25px;
+    .h1Nosotros, .h1Contacto, .h1Productos, .h1Pedidos {
+        font-size: 20px;
+        width: 50%;
+    }
+    
+    .h2Nosotros, .h2Contacto, .h2Productos, .h2Pedidos {
+        font-size: 45px;
+        align-content: center;
+        margin-left: 40px;
+        width: 45%;
+        block-size: fit-content;
         text-align: center;
     }
 
-    #formulario {
-        align-items: center;
-        margin-left: 60px;
 
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #C726FF;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #formulario {
+        text-align: center;
+        width: 20%;
+        display: inline;
+        box-sizing: content-box;
     }
 
     #reserva {
@@ -420,6 +447,10 @@ legend, textarea{
         text-align: center;
         display: inline;
         margin-left: 5%;
+    }
+
+    textarea {
+        width: 80%;
     }
     
     
@@ -435,30 +466,50 @@ legend, textarea{
         display: grid;
         display: inline;
         justify-content: end;
-        margin-left: 160px;
+        margin-left: 70px;
         margin-top: 200px;
+        width: 30%;
+        height: 20%;
+
     }
 
 
+
+    .textoProductos {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #C726FF;
+        font-size: 20px;
+        text-align: start;
+        width: 90%;
+    }
+
     .grid-productos {
         display: grid;
-        grid-template-columns: repeat(3, 100px);
-        grid-template-rows: repeat(3, 100px);
-        grid-gap: 100px;
-        grid-template-areas: "plastico carton" 
-                             "choco formas"
-                             "frascos frascos";
+        grid-template-columns: repeat(1, 10px);
+        grid-template-rows: repeat(1, 100px);
+        grid-gap: 60px;
+        grid-template-areas: "plastico" 
+                             "carton" 
+                             "choco" 
+                             "formas"
+                             "frascos";
         align-items: center;
-        margin-left: 50px;
-        margin-top: 50px;
+        margin-left: 65px;
+        margin-top: 60px;
         vertical-align: bottom;
         height: 600px;
+        block-size: fit-content;
+        width: 70%;
     }
     
     #cajaPlastico {
         grid-area: plastico;
         display:inline-block;
-        margin-top: 10px;
+
+    }
+    .cajaPlastico {
+        display: inline-block;
+        width: 1500%;
     }
     
     #cajaCarton {
@@ -466,27 +517,50 @@ legend, textarea{
         display:inline-block;
         vertical-align:top;
     }
+    .cajaCarton {
+        display: inline-block;
+        width: 1500%;
+    }
+    
+
     
     
     #cajaChoco {
         grid-area: choco;
         display:inline-block;
         vertical-align:top;
+        margin-top: 0px;
     }
+    .cajaChoco {
+        display: inline-block;
+        width: 1500%;
+    }
+
     
     #cajaFormas {
         grid-area: formas;
         display:inline-block;
         vertical-align:top;
     }
+    .cajaFormas {
+        display: inline-block;
+        width: 1500%;
+    }
+
     
     #frascos {
         grid-area: frascos;
         display:inline-block;
         vertical-align:top;
-        margin-left: 100px;
+        margin-top: 0px;
     }
-    
-    
+    .frascos {
+        display: inline-block;
+        width: 1500%;
+    }
+
+
 
 }
+    
+    
