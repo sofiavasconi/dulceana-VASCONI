@@ -355,14 +355,6 @@ legend, textarea{
     }
 
     
-    .padreFlex1{
-        display: grid;
-        background-color: #F6B3FC;
-        border: #F6B3FC;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-    }
     
     .padreFlex{
         display: grid;
