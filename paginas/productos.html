@@ -6,52 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dulce Ana | Productos</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="../style.css">
 
     
 </head>
+
 <body>
-    <div class="padreFlex">
     <header>
-        <nav>
-            <ul class="listaProductos" type="disc">
-                <li><a href="../index.html"> << Inicio</a></li>
-                <li><a href="sobrenosotros.html"> << Sobre Nosotros </a></li>
-                <li><a href="contacto.html"> << Contacto </a></li>
-                <li class="pagina"> Productos </li>
-                <li><a href="pedidosonline.html">Pedidos Online >></a></li>
+    <nav>
+        <div class="container-fluid11">
+           <ul class="nav nav-fill">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html"> << Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="sobrenosotros.html"> << Sobre Nosotros </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"> << Contacto </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link">Productos </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pedidosonline.html">Pedidos Online >></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-fluid12">
+            <ul class="nav nav-tabs">
+
+                    <li class="nav-item1 dropdown">
+
+                        <a class="nav-link1 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">MENÚ</a>
+                
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../index.html">Inicio</a>
+                    </li>
+
+                    <li><a class="dropdown-item" href="sobrenosotros.html">Sobre Nosotros </a>
+                    </li>
+
+                    <li><a class="dropdown-item" href="contacto.html"> Contacto </a>
+                    </li>
+
+                    <li><a class="dropdown-item">Productos </a>
+                    </li>
+
+                    <li><a class="dropdown-item" href="pedidosonline.html">Pedidos Online</a>
+                    </li>
+                </ul>
+                    </li>
             </ul>
 
-            <a class="listaMenu"> MENÚ </a> 
-
-
-        </nav>
+        </div>
+    </nav> 
     </header>
-    </div>
-        <br>
 
-    <h1 class="h1Productos">DULCE ANA</h1>
-    <h2 class="h2Productos">Productos</h2>
+    <br>
+    <div class="container-fluid">
+        <div class="row align-items-start">
+            <div class="col-md-2">
+                <p class="h3">DULCE ANA</p>
+            </div>
+        </div>
+    </div>
         
-        <p class="textoProductos">Nuestros productos son:</p>
-        <section>
-            <article>
-                <div class="grid-productos">
-                    <div id="cajaPlastico"><img src="../imagenes/cajaplastico.jpg" width="150" height="150"><a class="cajaPlastico">Caja de Plástico</a></div>  
-                    <div id="cajaCarton"><img src="../imagenes/cajacarton.jpg" width="150" height="150"><a class="cajaCarton">Caja de Cartón</a></div>
-                    <div id="cajaChoco"><img src="../imagenes/choco.jpg" width="150" height="150"><a class="cajaChoco">Caja de Chocolates</a></div>
-                    <div id="cajaFormas"><img src="../imagenes/forma.jpg" width="150" height="150"><a class="cajaFormas">Caja con Formas</a></div>
-                    <div id="frascos"><img src="../imagenes/frascos.jpg" width="150" height="150"><a class="frascos">Frascos</a></div>
-                    
-                </div>
-            </article>
-        </section>
+    <div class="container-fluid">
+        <div class="col align-self-center">
+            <h1 class="display-2">Productos</h1>
+        </div>
+    </div>
+    <br><br>
+        
+    <p class="text-center1">Nuestros productos son:</p>
+
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="../imagenes/cajaplastico.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Caja de Plástico</h5>
+            </div>
+        </div>  
+
+        <div class="card">
+            <img class="card-img-top" src="../imagenes/cajacarton.jpg"alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Caja de Cartón</h5>
+            </div>  
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="../imagenes/choco.jpg"alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Caja de Chocolates</h5>
+            </div>  
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="../imagenes/forma.jpg"alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Caja con Formas</h5>
+            </div>  
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="../imagenes/frascos.jpg"alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Formas</h5>
+            </div>  
+        </div>
+    </div>
+
         <br><br>
 
-        <footer id="redesProductos">
-            <a href="https://www.facebook.com/dulceana8119" target="_BLANK"><img src="../imagenes/facebook.png" width="50" height="50"></a>
-            <a href="https://api.whatsapp.com/send?phone=541123878119&text=%C2%A1Hola%21+Estoy+en+la+tienda+DULCE+ANA+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n." target="_BLANK"><img src="../imagenes/wpp.webp" width="50" height="50"></a>
-            <a href="https://www.instagram.com/dulceana_ok/" target="_BLANK"><img src="../imagenes/instagram.webp" width="50" height="50"></a>
+        <footer>
+            <div class="container-fluid3">
+                <div class="position-absolute top-100 start-100 translate-middle"></div>
+
+                <a href="https://www.facebook.com/dulceana8119" target="_BLANK"><img src="../imagenes/facebook.png" class="img-circle2" alt="face"></a>
+
+                <a href="https://api.whatsapp.com/send?phone=541123878119&text=%C2%A1Hola%21+Estoy+en+la+tienda+DULCE+ANA+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n." target="_BLANK"><img src="../imagenes/wpp.webp" class="img-circle2" alt="face"></a>
+
+                <a href="https://www.instagram.com/dulceana_ok/" target="_BLANK"><img src="../imagenes/instagram.webp" class="img-circle2" alt="face"></a>
+
+                </div>
+            </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+
     </body>
     </html>
