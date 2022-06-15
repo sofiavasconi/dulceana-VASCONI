@@ -25,6 +25,7 @@ body{
     }
 }
 
+
 .h1{
     font-family: 'Luckiest Guy', cursive;
     color: #DF7CE8;
@@ -45,6 +46,7 @@ body{
         opacity: 1;
     }
 }
+
 
 .h4{
     font-family: Arial, Helvetica, sans-serif;
@@ -67,17 +69,6 @@ body{
 }
 
 
-
-
-.display-2{
-    font-family: 'Luckiest Guy', cursive;
-    color: #DF7CE8;
-    font-size: 70px;
-    text-align: center;
-}
-
-
-
 .h3 {
     font-family: 'Luckiest Guy', cursive;
     color: #DF7CE8;
@@ -97,32 +88,58 @@ body{
 }
 
 
+.display-2{
+    font-family: 'Luckiest Guy', cursive;
+    color: #DF7CE8;
+    font-size: 70px;
+    text-align: center;
+}
+
+
+.fotos{
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 100px;
+    margin-left: 330px;
+    margin-top: 50px;
+}
+
+
+.red {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 100px;
+    margin-top: 50px;
+}
+
+
 .text-center{
     font-family: Arial, Helvetica, sans-serif;
     color: #C726FF;
     font-size: 20px;
     text-align: center;
+    margin-top: 30px;
 }
 
-.text-center1 {
+
+.texto {
     font-family: Arial, Helvetica, sans-serif;
     color: #C726FF;
     font-size: 20px;
     text-align: start;
+    margin-top: 20px;
 }
 
-.container-fluid1{
+.menu{
     background-color: #F6B3FC;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
-.container-fluid11 {
+
+.menu2 {
     background-color: #F6B3FC;
 }
 
-.container-fluid12 {
-    display: none;
-}   
 
 .nav-item {
     font-family: Arial, Helvetica, sans-serif;
@@ -131,8 +148,18 @@ body{
     list-style: none;
 }
 
+
+.nav-item a:hover {
+    color: #FFDDDD;
+}
+
+
 .nav-link {
     color: #C726FF;
+}
+
+.desplegable {
+    display: none;
 }
 
 
@@ -141,31 +168,9 @@ a{
     text-decoration: none;  
 }
 
-
-
-.pagina {
-    color: #FFDDDD;
+.form-row {
+    margin-top: 30px;
 }
-
-
-
-.img-circle1{
-    width: 150px;
-    height: 150px;
-    -webkit-border-radius: 100px;
-    margin-left: 330px;
-}
-
-.container-fluid3{
-    margin-left: 550px;
-}
-
-.img-circle2 {
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 100px;
-}
-
 
 .form-group{
     color: #C726FF;
@@ -173,24 +178,8 @@ a{
     font-size: 15px;
     text-align: center;
     display: block;
-    margin:auto;   
-}
-
-
-.card-deck {
-    text-align: center;
-}
-
-.card {
-    width: 10%;
-    height: 10%;
-    display: inline-block;
-}
-
-.card-title {
-    color: #C726FF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    margin:auto; 
+    margin-top: 40px;  
 }
 
 
@@ -201,11 +190,39 @@ a{
 }
 
 
+.card-deck {
+    text-align: center;
+}
 
 
-.link {
+.card {
+    width: 10%;
+    height: 10%;
+    display: inline-block;
+}
+
+
+.card-title {
+    color: #C726FF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+.link1 {
     color: #1EA6F2;
 }
+
+
+.link1:hover {
+    color: #cf0a66;
+}
+
+
+.redes{
+    margin-left: 550px;
+}
+
 
 
 
@@ -218,6 +235,21 @@ a{
         background-color: #FFDDDD;
         overflow-x: hidden;
         width: 95%;
+    }
+    
+    
+    .dropdown-menu {
+        background-color: #F6B3FC;
+
+    }
+
+
+    .dropdown-item {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #C726FF;
+        width: 100%;
+        padding: 0%;
     }
     
     
@@ -263,7 +295,7 @@ a{
         }
     }
     
-    
+
     .h4{
         font-family: Arial, Helvetica, sans-serif;
         color: #DF7CE8;
@@ -282,57 +314,6 @@ a{
         100% {
             opacity: 1;
         }
-    }
-    
-    .container-fluid1{
-        background-color: #F6B3FC;
-        border: #F6B3FC;
-        justify-content: center;
-        margin-left: 3%;
-        width: 100%;
-        margin-top: 70%;
-    }
-    
-    .nav-item{
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .container-fluid11{
-        display: none;
-    }
-
-
-    .container-fluid12{
-        display: block;
-        background-color: #F6B3FC;
-        border: #F6B3FC;
-        justify-content: center;
-        width: 105%;
-        box-sizing: content-box;
-    }
-
-    .nav-item1 {
-        font-size: 20px;
-        display: block;
-        margin:auto;
-    }
-
-    .dropdown-menu {
-        background-color: #F6B3FC;
-
-    }
-
-    .dropdown-item {
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        color: #C726FF;
-        width: 100%;
-        padding: 0%;
-    }
-
-    .container-fluid2 {
-        display: none;
     }
 
 
@@ -354,7 +335,8 @@ a{
         100% {
             opacity: 1;
         }
-    }
+    }    
+
 
     .display-2 {
         font-family: 'Luckiest Guy', cursive;
@@ -365,11 +347,68 @@ a{
         margin-left: 5%;
     }
 
+
+    .red {
+        width: 50px;
+        height: 50px;
+        -webkit-border-radius: 100px;
+    }
+
+
     .text-center {
         width: 100%;
         font-size: 15px;
         text-align: center;
     }
+
+
+    .menu{
+        background-color: #F6B3FC;
+        border: #F6B3FC;
+        justify-content: center;
+        margin-left: 3%;
+        width: 100%;
+        margin-top: 80%;
+    }
+    
+
+    .menu2{
+        display: none;
+    }
+
+
+    .nav-item{
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    .item {
+        font-size: 20px;
+        display: block;
+        margin:auto;
+    }
+
+
+    .link:hover {
+        color: #FFDDDD;
+    }
+
+    
+    .desplegable{
+        display: block;
+        background-color: #F6B3FC;
+        border: #F6B3FC;
+        justify-content: center;
+        width: 105%;
+        box-sizing: content-box;
+    }
+
+
+    .imagenes {
+        display: none;
+    }
+
 
     a {
         font-family: Arial, Helvetica, sans-serif;
@@ -380,34 +419,34 @@ a{
     }
 
 
-    .container-fluid3{
-        display: block;
-        margin: auto;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .img-circle2 {
-        width: 50px;
-        height: 50px;
-        -webkit-border-radius: 100px;
-    }
-
-
-    textarea {
-        width: 80%;
-    }    
-    
-
     .card {
 
         display:inline;
     }
 
+
     .card-img-top {
         width: 50%;
         height: 50%;
     }
+
+
+    textarea {
+        width: 80%;
+    }
+
     
+    .link1:hover {
+        color: #cf0a66;
+    }
+        
+
+    .redes{
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+     
 
 }
