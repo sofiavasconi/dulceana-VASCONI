@@ -1,472 +1,492 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-
-    
-body{ 
-    background-color: #FFDDDD;
-    overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+body {
+  background-color: #FFDDDD;
+  overflow-x: hidden;
 }
-
 
 .img-circle {
-    width: 200px;
-    height: 200px;
-    -webkit-border-radius: 100px;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count:initial;
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 100px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-
-.h1{
-    font-family: 'Luckiest Guy', cursive;
-    color: #DF7CE8;
-    margin-top: 250px;
-    font-size: 100px;
-    width: 150%;
-    text-align: center;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count:initial;
-}
-
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-.h4{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #DF7CE8;
-    align-content: center;
-    text-align: center;
-    width: 100%;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count:initial;
+.h1 {
+  font-family: "Luckiest Guy", cursive;
+  color: #DF7CE8;
+  margin-top: 250px;
+  font-size: 100px;
+  width: 150%;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
 }
 
 @keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #DF7CE8;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
 }
 
-
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .h3 {
-    font-family: 'Luckiest Guy', cursive;
-    color: #DF7CE8;
-    font-size: 30px;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count:initial;
+  font-family: "Luckiest Guy", cursive;
+  color: #DF7CE8;
+  font-size: 30px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
 }
 
 @keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.display-2 {
+  font-family: "Luckiest Guy", cursive;
+  color: #DF7CE8;
+  font-size: 70px;
+  text-align: center;
 }
 
-
-.display-2{
-    font-family: 'Luckiest Guy', cursive;
-    color: #DF7CE8;
-    font-size: 70px;
-    text-align: center;
+.text-center {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #C726FF;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
 }
-
-
-.fotos{
-    width: 150px;
-    height: 150px;
-    -webkit-border-radius: 100px;
-    margin-left: 330px;
-    margin-top: 50px;
+.text-center .link1 {
+  color: #1EA6F2;
 }
-
-
-.red {
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 100px;
-    margin-top: 50px;
+.text-center .link1:hover {
+  color: #cf0a66;
 }
-
-
-.text-center{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #C726FF;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 30px;
-}
-
 
 .texto {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #C726FF;
-    font-size: 20px;
-    text-align: start;
-    margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #C726FF;
+  font-size: 20px;
+  text-align: start;
+  margin-top: 20px;
 }
 
-.menu{
-    background-color: #F6B3FC;
-    margin-top: 40px;
+.menu, .menu2 {
+  background-color: #F6B3FC;
+  margin-top: 40px;
 }
-
+.menu .nav-item, .menu2 .nav-item {
+  font-family: Arial, Helvetica, sans-serif;
+  align-content: center;
+  font-size: 25px;
+  list-style: none;
+}
+.menu .nav-item .nav-link, .menu2 .nav-item .nav-link {
+  color: #C726FF;
+}
+.menu .nav-item .nav-link:hover, .menu2 .nav-item .nav-link:hover {
+  color: #FFDDDD;
+}
 
 .menu2 {
-    background-color: #F6B3FC;
+  background-color: #F6B3FC;
+  margin-top: 0px;
+}
+.menu2 .nav-item {
+  font-family: Arial, Helvetica, sans-serif;
+  align-content: center;
+  font-size: 25px;
+  list-style: none;
+}
+.menu2 .nav-item .nav-link {
+  color: #C726FF;
+}
+.menu2 .nav-item .nav-link:hover {
+  color: #FFDDDD;
 }
 
-
-.nav-item {
-    font-family: Arial, Helvetica, sans-serif;
-    align-content: center;
-    font-size: 25px;
-    list-style: none;
-}
-
-
-.nav-item a:hover {
-    color: #FFDDDD;
-}
-
-
-.nav-link {
-    color: #C726FF;
+.fotos {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 100px;
+  margin-left: 330px;
+  margin-top: 50px;
 }
 
 .desplegable {
-    display: none;
+  display: none;
 }
 
-
-a{
-    color: #C726FF;
-    text-decoration: none;  
+a {
+  color: #C726FF;
+  text-decoration: none;
 }
 
 .form-row {
-    margin-top: 30px;
+  margin-top: 30px;
+}
+.form-row .form-group {
+  color: #C726FF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+.form-row .form-group .form-control {
+  color: #C726FF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 
-.form-group{
-    color: #C726FF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-align: center;
-    display: block;
-    margin:auto; 
-    margin-top: 40px;  
+.formReserva {
+  color: #C726FF;
 }
-
-
-.form-control {
-    color: #C726FF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+.formReserva .form-group {
+  color: #C726FF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
 }
-
+.formReserva .form-group .form-control {
+  color: #C726FF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
 
 .card-deck {
-    text-align: center;
+  text-align: center;
+}
+.card-deck .card {
+  width: 15%;
+  height: 15%;
+  display: inline-block;
+}
+.card-deck .card .card-img-top {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 200px;
+  height: 200px;
 }
 
-
-.card {
-    width: 15%;
-    height: 15%;
-    display: inline-block;
+.imagenFrasco {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 200px;
+  height: 222px;
 }
-
 
 .card-title {
+  color: #C726FF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.card-text {
+  color: #1EA6F2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.redes {
+  margin-left: 550px;
+}
+.redes .red {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 100px;
+  margin-top: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 470px) {
+  body {
+    background-color: #FFDDDD;
+    overflow-x: hidden;
+    width: 95%;
+  }
+
+  .dropdown-menu {
+    background-color: #F6B3FC;
+  }
+  .dropdown-menu .dropdown-item {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #C726FF;
+    width: 100%;
+    padding: 0%;
+  }
+
+  .img-circle {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 100px;
+    text-align: center;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .h1 {
+    font-family: "Luckiest Guy", cursive;
+    color: #DF7CE8;
+    font-size: 55px;
+    text-align: center;
+    width: 100%;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DF7CE8;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .h3 {
+    font-family: "Luckiest Guy", cursive;
+    color: #DF7CE8;
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .display-2 {
+    font-family: "Luckiest Guy", cursive;
+    color: #DF7CE8;
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+    margin-left: 5%;
+  }
+
+  .text-center {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menu {
+    background-color: #F6B3FC;
+    border: #F6B3FC;
+    justify-content: center;
+    margin-left: 3%;
+    width: 100%;
+    margin-top: 80%;
+  }
+  .menu .nav-item {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .menu2 {
+    display: none;
+  }
+
+  .desplegable {
+    display: block;
+    background-color: #F6B3FC;
+    border: #F6B3FC;
+    justify-content: center;
+    width: 105%;
+    box-sizing: content-box;
+  }
+  .desplegable .item {
+    font-size: 20px;
+    display: block;
+    margin: auto;
+  }
+
+  .link:hover {
+    color: #FFDDDD;
+  }
+
+  .imagenes {
+    display: none;
+  }
+
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1EA6F2;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card-deck {
+    text-align: center;
+  }
+  .card-deck .card {
+    width: 80%;
+    height: 50%;
+    display: inline-block;
+  }
+  .card-deck .card .card-img-top {
+    -o-object-fit: fill;
+       object-fit: fill;
+    width: 150px;
+    height: 150px;
+  }
+
+  .imagenFrasco {
+    -o-object-fit: fill;
+       object-fit: fill;
+    width: 150px;
+    height: 152px;
+  }
+
+  .card-title {
     color: #C726FF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-}
+  }
 
-
-.card-text {
+  .card-text {
     color: #1EA6F2;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-}
+  }
 
-.card-img-top {
-    object-fit: fill;
-    width: 200px;
-    height: 200px;
-}
+  textarea {
+    width: 80%;
+  }
 
-
-.imagenFrasco {
-    object-fit: fill;
-    width: 200px;
-    height: 220px;
-}
-
-.link1 {
-    color: #1EA6F2;
-}
-
-
-.link1:hover {
+  .link1:hover {
     color: #cf0a66;
-}
+  }
 
-
-.redes{
-    margin-left: 550px;
-}
-
-
-
-
-
-
-
-@media (min-width: 320px) and (max-width: 470px) {
-
-    body { 
-        background-color: #FFDDDD;
-        overflow-x: hidden;
-        width: 95%;
-    }
-    
-    
-    .dropdown-menu {
-        background-color: #F6B3FC;
-
-    }
-
-
-    .dropdown-item {
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        color: #C726FF;
-        width: 100%;
-        padding: 0%;
-    }
-    
-    
-    .img-circle {
-        display: block;
-        margin:auto;
-        width: 150px;
-        height: 150px;
-        -webkit-border-radius: 100px;
-        text-align: center;
-        animation-duration: 2s;
-        animation-name: aparecer;
-        animation-iteration-count:initial;
-    }
-    
-    @keyframes aparecer {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    
-    .h1{
-        font-family: 'Luckiest Guy', cursive;
-        color: #DF7CE8;
-        font-size: 55px;
-        text-align: center;
-        width: 100%;
-        animation-duration: 2s;
-        animation-name: aparecer;
-        animation-iteration-count:initial;
-    }
-    
-    @keyframes aparecer {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-
-    .h4{
-        font-family: Arial, Helvetica, sans-serif;
-        color: #DF7CE8;
-        text-align: center;
-        font-size: 25px;  
-        width: 100%; 
-        animation-duration: 2s;
-        animation-name: aparecer;
-        animation-iteration-count:initial;
-    }
-    
-    @keyframes aparecer {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-
-    .h3 {
-        font-family: 'Luckiest Guy', cursive;
-        color: #DF7CE8;
-        font-size: 20px;
-        width: 100%;
-        text-align: left;
-        animation-duration: 2s;
-        animation-name: aparecer;
-        animation-iteration-count:initial;
-    }
-    
-    @keyframes aparecer {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }    
-
-
-    .display-2 {
-        font-family: 'Luckiest Guy', cursive;
-        color: #DF7CE8;
-        font-size: 35px;
-        text-align: center;
-        width: 100%;
-        margin-left: 5%;
-    }
-
-
-
-    .red {
-        width: 50px;
-        height: 50px;
-        -webkit-border-radius: 100px;
-    }
-
-
-    .text-center {
-        width: 100%;
-        font-size: 20px;
-        text-align: center;
-    }
-
-
-    .menu{
-        background-color: #F6B3FC;
-        border: #F6B3FC;
-        justify-content: center;
-        margin-left: 3%;
-        width: 100%;
-        margin-top: 80%;
-    }
-    
-
-    .menu2{
-        display: none;
-    }
-
-
-    .nav-item{
-        font-size: 30px;
-        text-align: center;
-    }
-
-
-    .item {
-        font-size: 20px;
-        display: block;
-        margin:auto;
-    }
-
-
-    .link:hover {
-        color: #FFDDDD;
-    }
-
-    
-    .desplegable{
-        display: block;
-        background-color: #F6B3FC;
-        border: #F6B3FC;
-        justify-content: center;
-        width: 105%;
-        box-sizing: content-box;
-    }
-
-
-    .imagenes {
-        display: none;
-    }
-
-
-    a {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #1EA6F2;
-        font-size: 15px;
-        text-align: center;
-        width: 100%;
-    }
-
-
-    .card {
-
-        display:inline;
-    }
-
-
-    .card-img-top {
-        width: 50%;
-        height: 50%;
-    }
-
-
-    textarea {
-        width: 80%;
-    }
-
-    
-    .link1:hover {
-        color: #cf0a66;
-    }
-        
-
-    .redes{
-        display: block;
-        margin: auto;
-        text-align: center;
-        width: 100%;
-    }
-     
-
-}
+  .redes {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+  .redes .red {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */
