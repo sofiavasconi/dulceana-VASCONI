@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-
+@import "colores";
   
 
 body{ 
@@ -31,7 +31,7 @@ body{
 
 .h1{
     font-family: 'Luckiest Guy', cursive;
-    color: #DF7CE8;
+    color: $colorTitulos;
     margin-top: 250px;
     font-size: 100px;
     width: 150%;
@@ -54,7 +54,7 @@ body{
 
 .h4{
     font-family: Arial, Helvetica, sans-serif;
-    color: #DF7CE8;
+    color: $colorTitulos;
     align-content: center;
     text-align: center;
     width: 100%;
@@ -76,7 +76,7 @@ body{
 
 .h3 {
     font-family: 'Luckiest Guy', cursive;
-    color: #DF7CE8;
+    color: $colorTitulos;
     font-size: 30px;
     animation-duration: 2s;
     animation-name: aparecer;
@@ -96,7 +96,7 @@ body{
 
 .display-2{
     font-family: 'Luckiest Guy', cursive;
-    color: #DF7CE8;
+    color: $colorTitulos;
     font-size: 70px;
     text-align: center;
 }
@@ -105,7 +105,7 @@ body{
 
 .text-center{
     font-family: Arial, Helvetica, sans-serif;
-    color: #C726FF;
+    color: $colorTextos;
     font-size: 20px;
     text-align: center;
     margin-top: 30px;
@@ -121,7 +121,7 @@ body{
 
 .texto {
     font-family: Arial, Helvetica, sans-serif;
-    color: #C726FF;
+    color: $colorTextos;
     font-size: 20px;
     text-align: start;
     margin-top: 20px;
@@ -129,7 +129,7 @@ body{
 
 
 
-.menu, .menu2 {
+.menu {
     background-color: #F6B3FC;
     margin-top: 40px;
     .nav-item {
@@ -138,7 +138,7 @@ body{
         font-size: 25px;
         list-style: none;
         .nav-link {
-            color: #C726FF;
+            color: $colorTextos;
             &:hover {
                 color: #FFDDDD;
             }
@@ -157,7 +157,7 @@ body{
         font-size: 25px;
         list-style: none;
         .nav-link {
-            color: #C726FF;
+            color: $colorTextos;
             &:hover {
                 color: #FFDDDD;
             }
@@ -185,7 +185,7 @@ body{
 
 
 a{
-    color: #C726FF;
+    color: $colorTextos;
     text-decoration: none;  
 }
 
@@ -194,7 +194,7 @@ a{
 .form-row {
     margin-top: 30px;        
     .form-group{
-        color: #C726FF;
+        color: $colorTextos;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
         text-align: center;
@@ -202,7 +202,7 @@ a{
         margin:auto; 
         margin-top: 40px;
         .form-control {
-            color: #C726FF;
+            color: $colorTextos;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 15px;
         }  
@@ -212,9 +212,9 @@ a{
 
 
 .formReserva {
-    color: #C726FF;
+    color: $colorTextos;
     .form-group{
-        color: #C726FF;
+        color: $colorTextos;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
         text-align: center;
@@ -222,7 +222,7 @@ a{
         margin:auto; 
         margin-top: 40px;
         .form-control {
-            color: #C726FF;
+            color: $colorTextos;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 15px;
         }  
@@ -256,7 +256,7 @@ a{
 
 
 .card-title {
-    color: #C726FF;
+    color: $colorTextos;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
@@ -305,7 +305,7 @@ a{
         .dropdown-item {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
-            color: #C726FF;
+            color: $colorTextos;
             width: 100%;
             padding: 0%;
         }
@@ -339,7 +339,7 @@ a{
 
     .h1{
         font-family: 'Luckiest Guy', cursive;
-        color: #DF7CE8;
+        color: $colorTitulos;
         font-size: 55px;
         text-align: center;
         width: 100%;
@@ -361,7 +361,7 @@ a{
 
     .h4{
         font-family: Arial, Helvetica, sans-serif;
-        color: #DF7CE8;
+        color: $colorTitulos;
         text-align: center;
         font-size: 25px;  
         width: 100%; 
@@ -383,7 +383,7 @@ a{
 
     .h3 {
         font-family: 'Luckiest Guy', cursive;
-        color: #DF7CE8;
+        color: $colorTitulos;
         font-size: 20px;
         width: 100%;
         text-align: left;
@@ -405,7 +405,7 @@ a{
 
     .display-2 {
         font-family: 'Luckiest Guy', cursive;
-        color: #DF7CE8;
+        color: $colorTitulos;
         font-size: 35px;
         text-align: center;
         width: 100%;
@@ -506,7 +506,7 @@ a{
     
     
     .card-title {
-        color: #C726FF;
+        color: $colorTextos;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
     }
