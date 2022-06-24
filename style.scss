@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import "colores";
+
+
+@mixin tamano($width, $height) {
+    width: $width;
+    height: $height;
+}
   
 
 body{ 
-    background-color: #FFDDDD;
+    background-color: map-get($estilos, color);
     overflow-x: hidden;
 }
 
 
 
 .img-circle {
-    width: 200px;
-    height: 200px;
+    @include tamano(200px, 200px);
     -webkit-border-radius: 100px;
     animation-duration: 2s;
     animation-name: aparecer;
@@ -35,7 +40,7 @@ body{
     margin-top: 250px;
     font-size: 100px;
     width: 150%;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count:initial;
@@ -55,8 +60,8 @@ body{
 .h4{
     font-family: Arial, Helvetica, sans-serif;
     color: $colorTitulos;
-    align-content: center;
-    text-align: center;
+    align-content: map-get($estilos, centro);
+    text-align: map-get($estilos, centro);
     width: 100%;
     animation-duration: 2s;
     animation-name: aparecer;
@@ -98,7 +103,7 @@ body{
     font-family: 'Luckiest Guy', cursive;
     color: $colorTitulos;
     font-size: 70px;
-    text-align: center;
+    text-align: map-get($estilos, centro);
 }
 
 
@@ -107,7 +112,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: $colorTextos;
     font-size: 20px;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     margin-top: 30px;
     .link1 {
         color: #1EA6F2;
@@ -134,13 +139,13 @@ body{
     margin-top: 40px;
     .nav-item {
         font-family: Arial, Helvetica, sans-serif;
-        align-content: center;
+        align-content: map-get($estilos, centro);
         font-size: 25px;
         list-style: none;
         .nav-link {
             color: $colorTextos;
             &:hover {
-                color: #FFDDDD;
+                color: map-get($estilos, color);
             }
         }
     }
@@ -149,28 +154,16 @@ body{
 
 
 .menu2 {
-    background-color: #F6B3FC;
+    @extend .menu;
     margin-top: 0px;
-    .nav-item {
-        font-family: Arial, Helvetica, sans-serif;
-        align-content: center;
-        font-size: 25px;
-        list-style: none;
-        .nav-link {
-            color: $colorTextos;
-            &:hover {
-                color: #FFDDDD;
-            }
-        }
-    }
 }
 
 
 
 
+
 .fotos{
-    width: 150px;
-    height: 150px;        
+    @include tamano(150px, 150px);        
     -webkit-border-radius: 100px;
     margin-left: 330px;
     margin-top: 50px;
@@ -197,7 +190,7 @@ a{
         color: $colorTextos;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         display: block;
         margin:auto; 
         margin-top: 40px;
@@ -217,7 +210,7 @@ a{
         color: $colorTextos;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         display: block;
         margin:auto; 
         margin-top: 40px;
@@ -232,15 +225,13 @@ a{
 
 
 .card-deck {
-    text-align: center;            
+    text-align: map-get($estilos, centro);            
     .card {
-        width: 15%;
-        height: 15%;
+        @include tamano(15%, 15%);
         display: inline-block;
         .card-img-top {
             object-fit: fill;
-            width: 200px;
-            height: 200px;
+            @include tamano(200px, 200px);
         }
     }
 }
@@ -249,8 +240,7 @@ a{
 
 .imagenFrasco {
             object-fit: fill;
-            width: 200px;
-            height: 222px;
+            @include tamano(200px, 222px);
 }
 
 
@@ -274,8 +264,7 @@ a{
 .redes{
     margin-left: 550px;
     .red {
-        width: 50px;
-        height: 50px;
+        @include tamano(50px, 50px);
         -webkit-border-radius: 100px;
         margin-top: 50px;
     }
@@ -293,7 +282,7 @@ a{
 @media (min-width: 320px) and (max-width: 470px) {
 
     body { 
-        background-color: #FFDDDD;
+        background-color: map-get($estilos, color);
         overflow-x: hidden;
         width: 95%;
     }
@@ -304,7 +293,7 @@ a{
         background-color: #F6B3FC;   
         .dropdown-item {
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
+            text-align: map-get($estilos, centro);
             color: $colorTextos;
             width: 100%;
             padding: 0%;
@@ -317,10 +306,9 @@ a{
     .img-circle {
         display: block;
         margin:auto;
-        width: 150px;
-        height: 150px;
+        @include tamano(150px, 150px);
         -webkit-border-radius: 100px;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         animation-duration: 2s;
         animation-name: aparecer;
         animation-iteration-count:initial;
@@ -341,7 +329,7 @@ a{
         font-family: 'Luckiest Guy', cursive;
         color: $colorTitulos;
         font-size: 55px;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         width: 100%;
         animation-duration: 2s;
         animation-name: aparecer;
@@ -362,7 +350,7 @@ a{
     .h4{
         font-family: Arial, Helvetica, sans-serif;
         color: $colorTitulos;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         font-size: 25px;  
         width: 100%; 
         animation-duration: 2s;
@@ -407,7 +395,7 @@ a{
         font-family: 'Luckiest Guy', cursive;
         color: $colorTitulos;
         font-size: 35px;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         width: 100%;
         margin-left: 5%;
     }
@@ -417,7 +405,7 @@ a{
     .text-center {
         width: 100%;
         font-size: 20px;
-        text-align: center;
+        text-align: map-get($estilos, centro);
     }
 
 
@@ -425,13 +413,13 @@ a{
     .menu{
         background-color: #F6B3FC;
         border: #F6B3FC;
-        justify-content: center;
+        justify-content: map-get($estilos, centro);
         margin-left: 3%;
         width: 100%;
         margin-top: 80%;    
         .nav-item{
             font-size: 30px;
-            text-align: center;
+            text-align: map-get($estilos, centro);
         }
     }
     
@@ -447,7 +435,7 @@ a{
         display: block;
         background-color: #F6B3FC;
         border: #F6B3FC;
-        justify-content: center;
+        justify-content: map-get($estilos, centro);
         width: 105%;
         box-sizing: content-box;    
         .item {
@@ -460,7 +448,7 @@ a{
 
 
     .link:hover {
-        color: #FFDDDD;
+        color: map-get($estilos, color);
     }
 
 
@@ -475,22 +463,20 @@ a{
         font-family: Arial, Helvetica, sans-serif;
         color: #1EA6F2;
         font-size: 15px;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         width: 100%;
     }
 
 
 
     .card-deck {
-        text-align: center;            
+        text-align: map-get($estilos, centro);            
         .card {
-            width: 80%;
-            height: 50%;
+            @include tamano(80%, 50%);
             display: inline-block;
             .card-img-top {
                 object-fit: fill;
-                width: 150px;
-                height: 150px;
+                @include tamano(150px, 150px);
             }
         }
     }
@@ -499,8 +485,7 @@ a{
     
     .imagenFrasco {
                 object-fit: fill;
-                width: 150px;
-                height: 152px;
+                @include tamano(150px, 152px);
     }
     
     
@@ -536,11 +521,10 @@ a{
     .redes{
         display: block;
         margin: auto;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         width: 100%;    
         .red {
-            width: 50px;
-            height: 50px;
+            @include tamano(50px, 50px);
             -webkit-border-radius: 100px;
         }
     }
