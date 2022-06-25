@@ -115,7 +115,7 @@ body{
     text-align: map-get($estilos, centro);
     margin-top: 30px;
     .link1 {
-        color: #1EA6F2;
+        color: map-get($estilos, link);
         &:hover {
             color: #cf0a66;
         }
@@ -135,7 +135,7 @@ body{
 
 
 .menu {
-    background-color: #F6B3FC;
+    background-color: $colorMenu;
     margin-top: 40px;
     .nav-item {
         font-family: Arial, Helvetica, sans-serif;
@@ -254,9 +254,8 @@ a{
       
 
 .card-text {
-    color: #1EA6F2;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    @extend .card-title;
+    color: map-get($estilos, link);
 }
 
 
@@ -290,7 +289,7 @@ a{
 
     
     .dropdown-menu {
-        background-color: #F6B3FC;   
+        background-color: $colorMenu;   
         .dropdown-item {
             font-family: Arial, Helvetica, sans-serif;
             text-align: map-get($estilos, centro);
@@ -411,8 +410,8 @@ a{
 
 
     .menu{
-        background-color: #F6B3FC;
-        border: #F6B3FC;
+        background-color: $colorMenu;
+        border: $colorMenu;
         justify-content: map-get($estilos, centro);
         margin-left: 3%;
         width: 100%;
@@ -433,8 +432,8 @@ a{
 
     .desplegable{
         display: block;
-        background-color: #F6B3FC;
-        border: #F6B3FC;
+        background-color: $colorMenu;
+        border: $colorMenu;
         justify-content: map-get($estilos, centro);
         width: 105%;
         box-sizing: content-box;    
@@ -461,7 +460,7 @@ a{
 
     a {
         font-family: Arial, Helvetica, sans-serif;
-        color: #1EA6F2;
+        color: map-get($estilos, link);
         font-size: 15px;
         text-align: map-get($estilos, centro);
         width: 100%;
@@ -499,7 +498,7 @@ a{
           
     
     .card-text {
-        color: #1EA6F2;
+        color: map-get($estilos, link);
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
     }
