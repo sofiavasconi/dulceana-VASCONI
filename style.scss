@@ -13,9 +13,22 @@ body{
     overflow-x: hidden;
 }
 
+.grid-inicio {
+    display: grid;
+    grid-template-columns: 50px 450px 100px;
+    grid-template-rows: 200px 100px 10px;
+    grid-template-areas: "logo h2 h2"
+                         "logo h4 h4";
+    align-items: start;
+    align-content: start;
+    justify-content: space-between;
+    justify-items: start;
+
+}
 
 
-.img-circle {
+.logo {
+    grid-area: logo;
     @include tamano(200px, 200px);
     -webkit-border-radius: 100px;
     animation-duration: 2s;
@@ -34,12 +47,14 @@ body{
 
 
 
-.h1{
+.h2{
+    grid-area: h2;
     font-family: 'Luckiest Guy', cursive;
     color: $colorTitulos;
-    margin-top: 250px;
-    font-size: 100px;
-    width: 150%;
+    margin-top: 100px;
+    margin-right: 20px;
+    font-size: 90px;
+    width: 100%;
     text-align: map-get($estilos, centro);
     animation-duration: 2s;
     animation-name: aparecer;
@@ -58,11 +73,14 @@ body{
 
 
 .h4{
+    grid-area: h4;
     font-family: Arial, Helvetica, sans-serif;
     color: $colorTitulos;
     align-content: map-get($estilos, centro);
     text-align: map-get($estilos, centro);
-    width: 100%;
+    font-size: 25px;
+    margin-left: 100px;
+    align-self: start;
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count:initial;
@@ -300,11 +318,24 @@ a{
 
     }
 
+    .grid-inicio {
+        display: grid;
+        grid-template-columns: 45px 470px;
+        grid-template-rows: 130px 125px;
+        grid-template-areas: "logo logo"
+                             "h2 h2"
+                             "h4 h4";
+        align-items: start;
+        align-content: start;
+    }
 
 
-    .img-circle {
-        display: block;
-        margin:auto;
+    .logo {
+        grid-area: logo;
+        width: 200px;
+        height: 200px;
+        -webkit-border-radius: 100px;
+        margin-left: 55%;
         @include tamano(150px, 150px);
         -webkit-border-radius: 100px;
         text-align: map-get($estilos, centro);
@@ -324,12 +355,16 @@ a{
     
     
 
-    .h1{
+    .h2{
+        grid-area: h2; 
         font-family: 'Luckiest Guy', cursive;
         color: $colorTitulos;
-        font-size: 55px;
+        font-size: 50px;
         text-align: map-get($estilos, centro);
-        width: 100%;
+        width: 50%; 
+        margin-top: 55%;  
+        margin-left: 18%;   
+        align-self: start;
         animation-duration: 2s;
         animation-name: aparecer;
         animation-iteration-count:initial;
@@ -347,11 +382,13 @@ a{
 
 
     .h4{
+        grid-area: h4;
         font-family: Arial, Helvetica, sans-serif;
         color: $colorTitulos;
         text-align: map-get($estilos, centro);
         font-size: 25px;  
-        width: 100%; 
+        width: 50%; 
+        margin-left: 5%;
         animation-duration: 2s;
         animation-name: aparecer;
         animation-iteration-count:initial;
@@ -415,7 +452,7 @@ a{
         justify-content: map-get($estilos, centro);
         margin-left: 3%;
         width: 100%;
-        margin-top: 80%;    
+        margin-top: 20%;    
         .nav-item{
             font-size: 30px;
             text-align: map-get($estilos, centro);
