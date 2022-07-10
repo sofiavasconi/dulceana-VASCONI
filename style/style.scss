@@ -285,7 +285,9 @@ a{
 
 
 .redes{
-    margin-left: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     .red {
         @include tamano(50px, 50px);
         -webkit-border-radius: 100px;
@@ -562,10 +564,11 @@ a{
 
 
     .redes{
-        display: block;
+        display: flex;
+        flex-direction: row;
         margin: auto;
         text-align: map-get($estilos, centro);
-        width: 100%;    
+        width: 50%;    
         .red {
             @include tamano(50px, 50px);
             -webkit-border-radius: 100px;

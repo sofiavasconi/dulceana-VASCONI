@@ -254,7 +254,9 @@ a {
 }
 
 .redes {
-  margin-left: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .redes .red {
   width: 50px;
@@ -269,7 +271,6 @@ a {
     overflow-x: hidden;
     width: 95%;
   }
-
   .dropdown-menu {
     background-color: #F6B3FC;
   }
@@ -280,14 +281,12 @@ a {
     width: 100%;
     padding: 0%;
   }
-
   .grid-inicio {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5 fr 1fr;
     grid-template-areas: "logo" "hijo";
   }
-
   .logo {
     grid-area: logo;
     width: 100%;
@@ -304,7 +303,6 @@ a {
     -webkit-animation-iteration-count: initial;
             animation-iteration-count: initial;
   }
-
   @-webkit-keyframes aparecer {
     0% {
       opacity: 0;
@@ -313,7 +311,6 @@ a {
       opacity: 1;
     }
   }
-
   @keyframes aparecer {
     0% {
       opacity: 0;
@@ -326,7 +323,6 @@ a {
     grid-area: hijo;
     justify-self: center;
   }
-
   .h2 {
     font-family: "Luckiest Guy", cursive;
     color: #DF7CE8;
@@ -341,7 +337,6 @@ a {
     -webkit-animation-iteration-count: initial;
             animation-iteration-count: initial;
   }
-
   @keyframes aparecer {
     0% {
       opacity: 0;
@@ -364,7 +359,6 @@ a {
     -webkit-animation-iteration-count: initial;
             animation-iteration-count: initial;
   }
-
   @keyframes aparecer {
     0% {
       opacity: 0;
@@ -386,7 +380,6 @@ a {
     -webkit-animation-iteration-count: initial;
             animation-iteration-count: initial;
   }
-
   @keyframes aparecer {
     0% {
       opacity: 0;
@@ -403,13 +396,11 @@ a {
     width: 100%;
     margin-left: 5%;
   }
-
   .text-center {
     width: 100%;
     font-size: 20px;
     text-align: center;
   }
-
   .menu, .menu2 {
     background-color: #F6B3FC;
     border: #F6B3FC;
@@ -422,11 +413,9 @@ a {
     font-size: 30px;
     text-align: center;
   }
-
   .menu2 {
     display: none;
   }
-
   .desplegable {
     display: block;
     background-color: #F6B3FC;
@@ -440,15 +429,12 @@ a {
     display: block;
     margin: auto;
   }
-
   .link:hover {
     color: #FFDDDD;
   }
-
   .imagenes {
     display: none;
   }
-
   a {
     font-family: Arial, Helvetica, sans-serif;
     color: #1EA6F2;
@@ -456,7 +442,6 @@ a {
     text-align: center;
     width: 100%;
   }
-
   .card-deck {
     text-align: center;
   }
@@ -471,39 +456,34 @@ a {
     width: 150px;
     height: 150px;
   }
-
   .imagenFrasco {
     -o-object-fit: fill;
        object-fit: fill;
     width: 150px;
     height: 152px;
   }
-
   .card-title, .card-text {
     color: #C726FF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
   }
-
   .card-text {
     color: #1EA6F2;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
   }
-
   textarea {
     width: 80%;
   }
-
   .link1:hover {
     color: #cf0a66;
   }
-
   .redes {
-    display: block;
+    display: flex;
+    flex-direction: row;
     margin: auto;
     text-align: center;
-    width: 100%;
+    width: 50%;
   }
   .redes .red {
     width: 50px;
