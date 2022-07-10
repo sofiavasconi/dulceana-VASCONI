@@ -15,10 +15,10 @@ body{
 
 .grid-inicio {
     display: grid;
-    grid-template-columns: 50px 450px 100px;
-    grid-template-rows: 200px 50px 10px;
-    grid-template-areas: "logo h2 h2"
-                         "logo h4 h4";
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo hijo"
+                         "logo hijo";
     align-items: start;
     align-content: start;
     justify-content: space-between;
@@ -29,6 +29,8 @@ body{
 
 .logo {
     grid-area: logo;
+    margin-left: 5%;
+    margin-top: 2%;
     @include tamano(200px, 200px);
     -webkit-border-radius: 100px;
     animation-duration: 2s;
@@ -47,12 +49,17 @@ body{
 
 
 
+.grid-hijo {
+    grid-area: hijo;
+    justify-content: start;    
+    margin-top: 2%;
+}
+
+
+
 .h2{
-    grid-area: h2;
     font-family: 'Luckiest Guy', cursive;
     color: $colorTitulos;
-    margin-top: 100px;
-    margin-right: 20px;
     font-size: 90px;
     width: 100%;
     text-align: map-get($estilos, centro);
@@ -73,13 +80,12 @@ body{
 
 
 .h4{
-    grid-area: h4;
+
     font-family: Arial, Helvetica, sans-serif;
     color: $colorTitulos;
     align-content: map-get($estilos, centro);
     text-align: map-get($estilos, centro);
     font-size: 25px;
-    margin-left: 100px;
     align-self: start;
     animation-duration: 2s;
     animation-name: aparecer;
@@ -320,24 +326,19 @@ a{
 
     .grid-inicio {
         display: grid;
-        grid-template-columns: repeat(2, 100px);
-        grid-template-rows: repeat(3, 140px);
-        grid-template-areas: "logo logo"
-                             "h2 h2"
-                             "h4 h4";
-        align-content: center;
-        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5 fr 1fr;
+        grid-template-areas: "logo"
+                             "hijo";
+
     }
 
 
     .logo {
         grid-area: logo;
         width: 100%;
-        height: auto;
         -webkit-border-radius: 100px;
-        margin-left: 20%; 
-        margin-top: 20%;
-        align-self: center;
+        justify-self: center;
         @include tamano(150px, 150px);
         -webkit-border-radius: 100px;
         text-align: map-get($estilos, centro);
@@ -355,18 +356,23 @@ a{
         }
     }
     
-    
+   
+
+
+    .grid-hijo {
+        grid-area: hijo;
+        justify-self: center;
+    }
+ 
+
 
     .h2{
-        grid-area: h2; 
         font-family: 'Luckiest Guy', cursive;
         color: $colorTitulos;
-        font-size: 50px;
+        font-size: 60px;
         text-align: map-get($estilos, centro);
         width: 100%;
-        height: auto; 
-        margin-top: 30%;  
-        align-self: center;
+        margin-top: 10%;
         animation-duration: 2s;
         animation-name: aparecer;
         animation-iteration-count:initial;
@@ -389,10 +395,7 @@ a{
         color: $colorTitulos;
         text-align: map-get($estilos, centro);
         font-size: 25px;  
-        width: 50%; 
-        margin-top: 10%;
-        height: auto;
-        align-items: center;
+        width: 100%; 
         animation-duration: 2s;
         animation-name: aparecer;
         animation-iteration-count:initial;
