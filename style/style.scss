@@ -301,9 +301,6 @@ a{
 
 
 
-
-
-
 @media (min-width: 320px) and (max-width: 470px) {
 
     body { 
@@ -484,9 +481,12 @@ a{
         width: 105%;
         box-sizing: content-box;    
         .item {
-            font-size: 20px;
+            font-size: 23px;
             display: block;
             margin:auto;
+            .dropdown-divider{
+                color: $colorMenu;
+            }
         }
     }
 

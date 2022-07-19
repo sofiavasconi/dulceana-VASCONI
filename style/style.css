@@ -425,9 +425,12 @@ a {
     box-sizing: content-box;
   }
   .desplegable .item {
-    font-size: 20px;
+    font-size: 23px;
     display: block;
     margin: auto;
+  }
+  .desplegable .item .dropdown-divider {
+    color: #F6B3FC;
   }
   .link:hover {
     color: #FFDDDD;
