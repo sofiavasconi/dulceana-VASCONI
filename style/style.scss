@@ -140,9 +140,6 @@ body{
     margin-top: 30px;
     .link1 {
         color: map-get($estilos, link);
-        &:hover {
-            color: #cf0a66;
-        }
     }
 }
 
@@ -195,7 +192,7 @@ body{
 
 
 
-.desplegable {
+.navbar {
     display: none;
 }
 
@@ -311,17 +308,6 @@ a{
     
 
     
-    .dropdown-menu {
-        background-color: $colorMenu;   
-        .dropdown-item {
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: map-get($estilos, centro);
-            color: $colorTextos;
-            width: 100%;
-            padding: 0%;
-        }
-
-    }
 
     .grid-inicio {
         display: grid;
@@ -412,11 +398,19 @@ a{
 
 
     .h3 {
+        display: none;
+    }
+
+
+
+    .display-2 {
         font-family: 'Luckiest Guy', cursive;
         color: $colorTitulos;
-        font-size: 20px;
+        font-size: 35px;
+        text-align: map-get($estilos, centro);
         width: 100%;
-        text-align: left;
+        margin-left: 5%;
+        margin-top: 20%;
         animation-duration: 2s;
         animation-name: aparecer;
         animation-iteration-count:initial;
@@ -429,18 +423,7 @@ a{
         100% {
             opacity: 1;
         }
-    }    
-
-
-
-    .display-2 {
-        font-family: 'Luckiest Guy', cursive;
-        color: $colorTitulos;
-        font-size: 35px;
-        text-align: map-get($estilos, centro);
-        width: 100%;
-        margin-left: 5%;
-    }
+    } 
 
 
 
@@ -460,9 +443,10 @@ a{
         width: 100%;
         margin-top: 15%;    
         .nav-item{
-            font-size: 30px;
+            font-size: 35px;
             text-align: map-get($estilos, centro);
         }
+
     }
     
 
@@ -473,21 +457,38 @@ a{
 
 
 
-    .desplegable{
+    .navbar{
         display: block;
         background-color: $colorMenu;
         border: $colorMenu;
         justify-content: map-get($estilos, centro);
         width: 105%;
-        box-sizing: content-box;    
-        .item {
-            font-size: 23px;
-            display: block;
-            margin:auto;
-            .dropdown-divider{
-                color: $colorMenu;
-            }
+        box-sizing: content-box;              
+        .navbar-brand{
+            font-family: 'Luckiest Guy', cursive;
+            color: $colorTextos;
+            font-size: 20px;
+            text-align: start;
+            width: 30%;             
         }
+    }
+
+
+
+    .nav-link{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-align: map-get($estilos, centro);           
+        color: $colorTextos;
+        &:hover{
+            color: map-get($estilos, color);
+        }
+    }
+
+
+
+    .navbar-toggler{
+        margin-right: 5%; 
     }
 
 
@@ -555,11 +556,6 @@ a{
         width: 80%;
     }
 
-    
-
-    .link1:hover {
-        color: #cf0a66;
-    }
         
 
 
