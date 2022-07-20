@@ -393,10 +393,6 @@ a {
     width: 100%;
     margin-top: 15%;
   }
-  .menu .nav-item, .menu2 .nav-item {
-    font-size: 35px;
-    text-align: center;
-  }
   .menu2 {
     display: none;
   }
@@ -439,6 +435,9 @@ a {
     font-size: 15px;
     text-align: center;
     width: 100%;
+  }
+  .boton {
+    width: 60%;
   }
   .card-deck {
     text-align: center;
